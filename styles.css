@@ -1,0 +1,78 @@
+body {
+    padding: 0; margin : 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    gap: 16px;
+}
+
+header,
+.section-1 {
+    background-color: #1F2937;
+    color: lightgray;
+}
+
+.section-1 {
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+/* so that image height would resize to fit the text container */
+.section-1-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 66.6666%;
+    height: 50%;
+    gap: 0px;
+}
+
+.text-container {
+    height: 100%;
+    display: flex;
+    flex: 1; /* I don't need to give exact sizes to them, just the wrap div */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button {
+    flex-basis: 10%;
+    width: 25%; /* I like being very precise with percentages */
+}
+
+h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+    margin: 0; /* this is important */
+}
+
+p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.image-container {
+    padding: 0px;
+    height: 100%;
+    flex: 1;
+    overflow: auto; /* makes image not resize, maintaining a good resolution. Javascript would come in handy for this */
+}
+
+.image-container img {
+    width: 100%;
+    border-image: none;
+}
