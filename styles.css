@@ -8,6 +8,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 5vh;
 }
 
 header ul {
@@ -26,9 +27,10 @@ header,
 .section-1 {
     display: flex;
     overflow: auto;
+    box-sizing: border-box;
     justify-content: center;
-    align-items: center;
-    height: 50vh;
+    align-items: center;   
+    height: 60vh;
 }
 
 /* so that image height would resize to fit the text container */
@@ -41,16 +43,18 @@ header,
 }
 
 .text-container {
-    height: 100%;
     display: flex;
     flex: 1; /* I don't need to give exact sizes to them, just the wrap div */
     flex-direction: column;
     justify-content: space-between;
+    gap: 0px;
 }
 
 button {
-    flex-basis: 10%;
-    width: 25%; /* I like being very precise with percentages */
+    height: 10%;
+    width: 12.5vh; /* I like it when buttons don't wrap text in 2 different lines. */
+    flex-shrink: 0;
+    flex-wrap:nowrap;
 }
 
 h1 {
@@ -67,9 +71,8 @@ p {
 
 .image-container {
     padding: 0px;
-    height: 100%;
     flex: 1;
-    overflow: auto; /* makes image not resize, maintaining a good resolution. Javascript would come in handy for this */
+    overflow: auto; /* makes image not resize, maintaining a good resolution. */
 }
 
 .image-container img {
