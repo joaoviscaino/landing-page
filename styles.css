@@ -98,6 +98,7 @@ header,
     padding: 0px;
     flex: 1;
     overflow: hidden; /* makes image not resize, maintaining a good resolution. */
+    background-color: #3b4042;
 }
 
 .section-1 .image-containerr img {
